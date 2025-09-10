@@ -22,6 +22,36 @@ import java.util.*;
 public class App {
     public static void main(String[] args)  {
         Scanner scanner = new Scanner(System.in);
+//Ask the user for a whole number x.
+
+    System.out.println("Give a whole number:");
+        int wholenumber = Integer.valueOf(scanner.nextLine());
+
+// Print whether x is EVEN or ODD.
+
+      if (wholenumber % 2 == 0) {
+       System.out.println("The number is even.");
+
+     }else{ 
+            System.out.println("This number is odd.");      
+ }
+     {if (wholenumber == 0) {
+        System.out.println("ZERO");
+     }}
+//Ask for a second whole number called total (a positive number).
+
+      System.out.println("Give a total:");
+      int total = Integer.valueOf(scanner.nextLine());
+      
+// Compute x divided by total as a DECIMAL calculation.
+       
+       System.out.println(wholenumber + " / " + total + " = " + (wholenumber / total));
+       
+       if (total <= 0 ) {
+        System.out.println("Eror");
+        
+       }
+
 
     }
 }
